@@ -35,67 +35,111 @@ header p{
     font-size: 16px;
 }
 
-main{
+main .languages {
     display: grid;
-    grid: auto auto auto ;
+    grid-template-columns: 10px repeat(7,70px) 10px ;
+    row-gap: 15px;
+    column-count: 3;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
 }
-
-main section .languages-left{
-
-}
-
-main ul{
-    margin: 10px;
-    list-style: none;
+section div {
+    width: 156px;
+    height: 45px;
+    text-align: center;
+    
+} 
+section div a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3366cc;
+    text-decoration: none;
     
     
 }
+ section div p{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 13px;
+     color: #54595d;
+     }
 
-main li{
-    font-size: 18px;
-    font-weight: bolder;
-    font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue", 
-    sans-serif;
-    font-size: 13px;
+section .en{
+    margin: 0;
+    grid-area: 1 / 1;
+    justify-content: center;
+}
+
+section .ko{
+    margin: 0;
+    grid-area: 2/1;
+}
+
+section .de{
+    margin: 0;
+    grid-area: 3 / 1;    
+}
+
+section .it{
+    margin: 0;
+    grid-area: 4/1;
     
 }
 
-main p{
-    margin:10px;
-    color: #54595d; 
-    font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    "Open Sans",
-    "Helvetica Neue", 
-    sans-serif;
-    font-size: 13px;
+section .po{
+    margin: 0;
+    grid-area: 5/1;
+    
+}
 
+section .es{
+    margin: 0;
+    grid-area: 1 / 3;
+    
+}
+
+section .py{
+    margin: 0;
+    grid-area: 2/3;
+}
+
+section .fr{
+    margin: 0;
+    grid-area: 3 /3;  
+
+}
+
+section .ja{
+    margin: 0;
+    grid-area: 4/3;
+}
+
+section .ar{
+    margin: 0;
+    grid-area: 5/3;
 }
 
 
 
-
-section .wiki-icon {
-    width: 200px;
-    height: 80px;
-}
-
-section img{
-    width: 200px;
+.wiki-icon {
+    width: 250px;
     height: auto;
+    grid-area: 2 / 4/ 5 /7  ;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+div img{
+    width: 220px;
+    height: 203px;
+    aspect-ratio: auto;
+    
 }
 
 

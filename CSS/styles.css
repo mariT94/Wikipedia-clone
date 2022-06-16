@@ -1,32 +1,34 @@
 body{
     box-sizing: border-box;
-    margin: 0;
+    margin: 4px;
     padding: 0;
     font-size: 62,5%;
     
 }
 
 header{
-    margin: 0;
-    padding: 0;    
+    margin: 10px;
+    padding: 5px;    
     width: 100%;
     height: 115px;
     display: flex;
-    align-items:flex-end;
+    align-items:center;
     justify-content: center;
     text-align: center;
     font-family: 'Linux Libertine', sans-serif;
 }
 
 header .name{
-    width: 220;
-    height: 60px;
-    padding-bottom: 4px;   
+    width: 260;
+    height: 70px;
+    padding-bottom: 4px; 
+    margin-top: 45px;  
+    text-align: center;
 }
 
 header img{
     width: 180px;
-    height: 35px;
+    height: 30px;
     margin-bottom: 0;
 }
 
@@ -35,11 +37,16 @@ header p{
     font-size: 16px;
 }
 
+main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 main .languages {
     display: grid;
-    grid-template-columns: 10px repeat(7,70px) 10px ;
-    row-gap: 15px;
-    column-count: 3;
+    grid-template-columns: 10px repeat(7,75px) 10px ;
+    grid-template-rows: repeat(5, 65px);
+    row-gap: 3px;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -50,6 +57,7 @@ section div {
     width: 156px;
     height: 45px;
     text-align: center;
+
     
 } 
 section div a{
@@ -65,67 +73,70 @@ section div a{
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      font-size: 13px;
      color: #54595d;
+     margin: 0;
      }
 
 section .en{
     margin: 0;
-    grid-area: 1 / 1;
-    justify-content: center;
+    grid-area: 1 / 3/ span 1;
+    align-items: flex-start;
+    
 }
 
 section .ko{
     margin: 0;
-    grid-area: 2/1;
+    grid-area: 2 / 2/ span 1; 
 }
 
 section .de{
     margin: 0;
-    grid-area: 3 / 1;    
+    grid-area: 3 / 1 / span 1;    
 }
 
 section .it{
     margin: 0;
-    grid-area: 4/1;
+    grid-area: 4 / 2 / span 1;
     
 }
 
 section .po{
     margin: 0;
-    grid-area: 5/1;
+    grid-area: 5/3/ span 1;
     
 }
 
 section .es{
     margin: 0;
-    grid-area: 1 / 3;
+    grid-area: 1 / 6 / span 1;
     
 }
 
 section .py{
     margin: 0;
-    grid-area: 2/3;
+    grid-area: 2 / 7 / span 1;
 }
 
 section .fr{
     margin: 0;
-    grid-area: 3 /3;  
+    grid-area: 3 / 7 ;  
+    margin-left: 10px;
 
 }
 
 section .ja{
     margin: 0;
-    grid-area: 4/3;
+    grid-area: 4 / 7 / span 1;
 }
 
 section .ar{
     margin: 0;
-    grid-area: 5/3;
+    grid-area: 5 / 6 / span 1;
 }
 
 
 
 .wiki-icon {
-    width: 250px;
+    width: 210px;
     height: auto;
     grid-area: 2 / 4/ 5 /7  ;
     justify-content: center;
@@ -136,11 +147,43 @@ section .ar{
 }
 
 div img{
-    width: 220px;
+    width: 225px;
     height: 203px;
-    aspect-ratio: auto;
-    
+    aspect-ratio: auto; 
+    margin: 0;
+    padding: 0;  
 }
+
+ main .main-input .main-input-container{
+    width: 300px;
+    height: 33PX;
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgb(162, 169, 177);
+
+}
+
+ main .main-input-container input{
+    height: 33px;
+    width: 330px;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+main .main-input .search-item{
+background-color: #3366cc;
+height: 35px;
+width: 35px;
+padding: 0;
+margin: 0;
+}
+
+.main-input .search-item img{
+    height: 20px;
+    width:20px;
+}
+
 
 
 

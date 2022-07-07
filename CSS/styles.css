@@ -1,16 +1,17 @@
 body{
     box-sizing: border-box;
-    margin: 4px;
+    margin: 0;
     padding: 0;
     font-size: 62,5%;
+
     
 }
 
 header{
-    margin: 10px;
+    margin: 5px;
     padding: 5px;    
-    width: 100%;
-    height: 115px;
+    width: 97%;
+    height: 80px;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -21,7 +22,7 @@ header{
 header .name{
     width: 260;
     height: 70px;
-    padding-bottom: 4px; 
+    padding-bottom: 0px; 
     margin-top: 45px;  
     text-align: center;
 }
@@ -38,20 +39,24 @@ header p{
 }
 
 main{
+    display: block;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    border-bottom: 1px solid #C8CCD1;
+    margin: 0;
 }
+
 main .languages {
     display: grid;
-    grid-template-columns: 10px repeat(7,75px) 10px ;
-    grid-template-rows: repeat(5, 65px);
-    row-gap: 3px;
+    grid-template-columns: 10px repeat(7,70px) 10px ;
+    grid-template-rows: repeat(5, 70px);
+    column-gap: 5px;
+    row-gap: 2px;
     align-items: center;
     text-align: center;
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   
+   margin-bottom: 15px;
 }
 section div {
     width: 156px;
@@ -149,39 +154,181 @@ section .ar{
 div img{
     width: 225px;
     height: 203px;
-    aspect-ratio: auto; 
     margin: 0;
     padding: 0;  
+
+}
+main .main-input{
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
  main .main-input .main-input-container{
-    width: 300px;
-    height: 33PX;
+    width: 400px;
+    height: 43PX;
     display: flex;
     justify-content: center;
-    border: solid 1px rgb(162, 169, 177);
-
+    align-items: center;
+    border-right: none;
+    border-bottom: solid 1px rgb(162, 169, 177);
+    border-top: solid 1px rgb(162, 169, 177);
+    border-left: solid 1px rgb(162, 169, 177);
+    border-radius: 2px 0 0 2px;
 }
 
+
  main .main-input-container input{
-    height: 33px;
-    width: 330px;
+    height: 42px;
+    width: 320px;
     padding: 0;
     margin: 0;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-main .main-input .search-item{
+
+
+main .main-input form select {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: #54595d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main .main-input .main-input-container:hover{
+    border-bottom: solid 1px rgb(118, 118, 118);
+    border-top: solid 1px rgb(118, 118, 118);
+    border-left: solid 1px rgb(118, 118, 118);
+}
+
+main .main-input form select:hover{
+    background-color: #f8f9fa;
+    border-radius: 2px;
+}
+
+main .main-input .search-icon{
 background-color: #3366cc;
-height: 35px;
-width: 35px;
+height: 45px;
+width: 56px;
 padding: 0;
 margin: 0;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
-.main-input .search-item img{
+main .main-input .search-icon:hover{
+    background-color: #447ff5;
+}
+
+main .main-input img{
+height: 30px;
+width: 30px;
+cursor: pointer;
+}
+
+
+main .read-box 
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.read-box .line-left{
+        border-top: 1px solid #54595d;
+        height: 2px;
+        max-width: 30px;
+        padding:0;
+        margin: 20px;      
+    }
+
+.read-box .box-text{
+
+    width: 300px;
+    height: 34px ;
+    border: 1px solid #a2a9b1 ;
+    background-color: #f8f9fa ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+}   
+
+.read-box .box-text:hover{
+background-color: #ffff;
+border: 1px solid #a2a9b1;
+}
+
+main .read-box .box-text .symbol {
+    width: 30px;
     height: 20px;
-    width:20px;
+    margin: 0;
+    pad: 0;
+    text-align: center;
+}
+
+main .read-box .box-text .symbol img{
+    width: 22px;
+    height: 22px;
+
+}
+
+.read-box .box-text .read-text {
+    width: 225px;
+    height: 20px;
+    margin: 0;
+}
+
+.read-box p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: #3366cc;
+    font-weight: 700;
+}
+
+main .read-box  .select-mark{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.read-box .select-mark form select{
+    background-color: transparent;
+    border: none;
+    color: #3366cc;
+}
+
+
+
+
+.read-box .line-right{
+    border-top: 1px solid #54595d;
+    height: 2px;
+    max-width: 30px;
+    padding:0;
+    margin: 20px;      
 }
 
 
